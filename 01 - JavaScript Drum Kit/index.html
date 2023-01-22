@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
+  <title>JS Instrument Kit</title>
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" defer src="./script.js"></script>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 <body>
 
@@ -20,78 +21,78 @@
   <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
-      <span class="sound">clap</span>
+      <span class="sound"></span>
     </div>
     <div data-key="83" class="key">
       <kbd>S</kbd>
-      <span class="sound">hihat</span>
+      <span class="sound"></span>
     </div>
     <div data-key="68" class="key">
       <kbd>D</kbd>
-      <span class="sound">kick</span>
+      <span class="sound"></span>
     </div>
     <div data-key="70" class="key">
       <kbd>F</kbd>
-      <span class="sound">openhat</span>
+      <span class="sound"></span>
     </div>
     <div data-key="71" class="key">
       <kbd>G</kbd>
-      <span class="sound">boom</span>
+      <span class="sound"></span>
     </div>
     <div data-key="72" class="key">
       <kbd>H</kbd>
-      <span class="sound">ride</span>
+      <span class="sound"></span>
     </div>
     <div data-key="74" class="key">
       <kbd>J</kbd>
-      <span class="sound">snare</span>
+      <span class="sound"></span>
     </div>
     <div data-key="75" class="key">
       <kbd>K</kbd>
-      <span class="sound">tom</span>
+      <span class="sound"></span>
     </div>
     <div data-key="76" class="key">
       <kbd>L</kbd>
-      <span class="sound">tink</span>
+      <span class="sound"></span>
     </div>
     <div data-key="186" class="key">
       <kbd>;</kbd>
-      <span class="sound">gong</span>
+      <span class="sound"></span>
     </div>
   </div>
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
-  <audio data-key="186" src="sounds/gong.wav"></audio>
+  <audio data-key-drums="65" src="sounds/drums/clap.wav"></audio>
+  <audio data-key-drums="83" src="sounds/drums/hihat.wav"></audio>
+  <audio data-key-drums="68" src="sounds/drums/kick.wav"></audio>
+  <audio data-key-drums="70" src="sounds/drums/openhat.wav"></audio>
+  <audio data-key-drums="71" src="sounds/drums/boom.wav"></audio>
+  <audio data-key-drums="72" src="sounds/drums/ride.wav"></audio>
+  <audio data-key-drums="74" src="sounds/drums/snare.wav"></audio>
+  <audio data-key-drums="75" src="sounds/drums/tom.wav"></audio>
+  <audio data-key-drums="76" src="sounds/drums/tink.wav"></audio>
+  <audio data-key-drums="186" src="sounds/drums/gong.wav"></audio>
 
-  <audio data-key="" src="sounds/c-major.wav"></audio>
-  <audio data-key="" src="sounds/c-minor.wav"></audio>
-  <audio data-key="" src="sounds/c#-major.wav"></audio>
-  <audio data-key="" src="sounds/c#-minor.wav"></audio>
-  <audio data-key="" src="sounds/d-major.wav"></audio>
-  <audio data-key="" src="sounds/d-minor.wav"></audio>
-  <audio data-key="" src="sounds/d#-major.wav"></audio>
-  <audio data-key="" src="sounds/d#-minor.wav"></audio>
-  <audio data-key="" src="sounds/e-major.wav"></audio>
-  <audio data-key="" src="sounds/e-minor.wav"></audio>
+  <audio data-key-piano="65" src="sounds/piano/c-major.wav"></audio>
+  <audio data-key-piano="83" src="sounds/piano/c-minor.wav"></audio>
+  <audio data-key-piano="68" src="sounds/piano/cSharp-major.wav"></audio>
+  <audio data-key-piano="70" src="sounds/piano/cSharp-minor.wav"></audio>
+  <audio data-key-piano="71" src="sounds/piano/d-major.wav"></audio>
+  <audio data-key-piano="72" src="sounds/piano/d-minor.wav"></audio>
+  <audio data-key-piano="74" src="sounds/piano/dSharp-major.wav"></audio>
+  <audio data-key-piano="75" src="sounds/piano/dSharp-minor.wav"></audio>
+  <audio data-key-piano="76" src="sounds/piano/e-major.wav"></audio>
+  <audio data-key-piano="186" src="sounds/piano/e-minor.wav"></audio>
 
-  <audio data-key="" src="sounds/g-major.wav"></audio>
-  <audio data-key="" src="sounds/c-major.wav"></audio>
-  <audio data-key="" src="sounds/d-major.wav"></audio>
-  <audio data-key="" src="sounds/a-major.wav"></audio>
-  <audio data-key="" src="sounds/e-major.wav"></audio>
-  <audio data-key="" src="sounds/d-minor.wav"></audio>
-  <audio data-key="" src="sounds/a-minor.wav"></audio>
-  <audio data-key="" src="sounds/e-minor.wav"></audio>
-  <audio data-key="" src="sounds/f-major.wav"></audio>
-  <audio data-key="" src="sounds/Bb-major.wav"></audio>
+  <audio data-key-guitar="65" src="sounds/guitar/d-flat.wav"></audio>
+  <audio data-key-guitar="83" src="sounds/guitar/d-major.wav"></audio>
+  <audio data-key-guitar="68" src="sounds/guitar/d-minor.wav"></audio>
+  <audio data-key-guitar="70" src="sounds/guitar/e-flat.wav"></audio>
+  <audio data-key-guitar="71" src="sounds/guitar/e-major.wav"></audio>
+  <audio data-key-guitar="72" src="sounds/guitar/f-major.wav"></audio>
+  <audio data-key-guitar="74" src="sounds/guitar/f-minor.wav"></audio>
+  <audio data-key-guitar="75" src="sounds/guitar/f-sharp.wav"></audio>
+  <audio data-key-guitar="76" src="sounds/guitar/g-major.wav"></audio>
+  <audio data-key-guitar="186" src="sounds/guitar/g-minor.wav"></audio>
 
 </body>
 </html>
