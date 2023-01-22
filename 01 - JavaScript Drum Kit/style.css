@@ -1,11 +1,12 @@
 html {
   font-size: 10px;
-  background: url('./background.jpg') bottom center;
+  background: url('./stage.jpg') center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body,html {
-  margin: 0;
+  margin: 0rem;
   padding: 0;
   font-family: sans-serif;
 }
@@ -48,4 +49,30 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+.instrument {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: auto;
+  margin-top: 4em;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 20rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+select, option {
+  background-color: rgba(0,0,0,0.4);
+  color: #ffc600;
+  border: .4rem solid black;
+  border-radius: .5rem;
+}
+
+option {
+  background-color: rgba(0,0,0,0.8);;
 }
