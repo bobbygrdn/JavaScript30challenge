@@ -1,0 +1,28 @@
+body {
+    margin-left: 50px;
+}
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#boulevardsList,
+#peopleList,
+#people {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-right: 20px;
+}
+
+#wisdom {
+    margin-left: 25px;
+}
