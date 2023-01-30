@@ -6,16 +6,124 @@
 </head>
 <body>
 
-  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+  <h1>Console Methods</h1>
+  <p>Using console methods can be great for manipulating your data, application or routes to show you tons of different information about what is going on.</p>
 
+  <h3>Here are the top 13 console methods!!</h3>
+
+  <h4>1. console.log()</h4>
+  <p>Ex: console.log(variableName) or console.log(object)
+    <br>
+    This results in showing the data in your console.
+  </p>
+  <h4>2. String Interpolation</h4>
+  <p>Ex: console.log('Hello I am a %s string!', 'user')
+    <br>
+    This will result in putting 'user' in place of the '%s'.
+    <br>
+    We also can use the newer method using ${} which is an easier method.
+  </p>
+  <h4>3. Styling your console</h4>
+  <p>Ex: console.log('%cI am some great text', 'font-size:20px; background:blue')
+    <br>
+    This will result in your text being 20px in size and the color blue in your console.
+  </p>
+  <h4>4. console.warn()</h4>
+  <p>Ex: console.warn('This code only works when you make it camelcase')
+    <br>
+    This will result in a warning logged in the console with the text you added.
+  </p>
+  <h4>5. console.error()</h4>
+  <p>Ex: console.error(error) 
+    <br>
+    This will log an error to the console if something goes wrong as it will trigger the error.
+  </p>
+  <h4>6. console.info()</h4>
+  <p>Ex: console.info('If you are refactoring this code make sure you keep the variable names')
+    <br>
+    This will result in an info block logged to the console showing you the info that was inputted.
+  </p>
+  <h4>7. console.assert()</h4>
+  <p>Ex: const p = document.querySelector('p')
+    <br>
+    console.assert(p.classList.contains('ouch'), 'That is wrong!')
+    <br>
+    This will result in an error with the included text being logged out to the console if the criteria is false.
+  </p>
+  <h4>8. console.clear()</h4>
+  <p>Ex: You have a lot of warnings or information in your console. Running 'console.clear()' will clear all that information out.</p>
+  <h4>9. console.dir()</h4>
+  <p>Ex: console.dir(p)
+    <br>
+    This will result in logging the p element with a drop down of all the attributes of the element.
+  </p>
+  <h4>10. console.group()</h4>
+  <p>Ex: dogs.forEach(dog => {
+    <br>
+    console.groupCollapsed(`${dog.name}`) or console.group(`${dog.name}`)
+    <br>
+    console.log(`This is ${dog.name}`)
+    <br>
+    console.log(`${dog.name} is ${dog.age} years old`)
+    <br>
+    console.log(`${dog.name} is ${dog.age * 7} dog years old`)
+    <br>
+    console.group(`${dog.name}`)
+    <br>
+    })
+  </p>
+  <h4>11. console.count()</h4>
+  <p>Ex: console.count('wes')
+    <br>
+    console.count('wes')
+    <br>
+    console.count('Steve')
+    <br>
+    console.count('wes')
+    <br>
+    console.count('Steve')
+    <br>
+    console.count('Steve')
+    <br>
+    console.count('Steve')
+    <br>
+    console.count('Steve')
+    <br>
+    console.count('Steve')
+    <br>
+    console.count('wes')
+    <br>
+    console.count('Steve')
+    <br>
+    This will result in a constant count of the same elemnts logged to the console
+  </p>
+  <h4>12. console.time()</h4>
+  <p>Ex: console.time('fetching data')
+    <br>
+    fetch('https://api.github.com/users/wesbos')
+    <br>
+    .then(response => response.json())
+    <br>
+    .then(data => {
+      <br>
+      console.timeEnd('fetching data')
+      <br>
+      console.log(data)
+      <br>
+    })
+      <br>
+      This would result in logging the time it took to complete the fetch request and the data being returned.
+      </p>
+  <h4>13. console.table()</h4>
+  <p>Ex: console.table(fetchData)
+    <br>
+    This would result in logging a table to the console that neatly organizes and lays out the information being returned.
+    <br>
+    This method is a great way to visualize the json data being returned from making an API request.
+  </p>
+  
   <script>
     const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
-
-    function makeGreen() {
-      const p = document.querySelector('p');
-      p.style.color = '#BADA55';
-      p.style.fontSize = '50px';
-    }
 
     // Regular
     console.log('hello');
@@ -63,7 +171,6 @@
     console.count('wes');
     console.count('Steve');
     console.count('Steve');
-
     console.count('Steve');
     console.count('Steve');
     console.count('Steve');
