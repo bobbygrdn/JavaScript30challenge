@@ -8,18 +8,30 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
-  display: flex;
+  padding: 10px;
+  /* display: flex; */
   background: #7A419B;
   min-height: 100vh;
   background: linear-gradient(135deg, #7c1599 0%,#921099 48%,#7e4ae8 100%);
   background-size: cover;
-  align-items: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+header {
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
 }
 
 .player {
-  max-width: 750px;
+  max-width: 1100px;
   border: 5px solid rgba(0,0,0,0.2);
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   position: relative;
@@ -40,6 +52,7 @@ body {
 
 .player__video {
   width: 100%;
+  height: 100%;
 }
 
 .player__button {
@@ -101,7 +114,25 @@ body {
   width: 50%;
   background: #ffc600;
   flex: 0;
-  flex-basis: 50%;
+  flex-basis: 0%;
+}
+
+.playbackLabels {
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+.playback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.playVolume {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* unholy css to style input type="range" */
@@ -159,4 +190,36 @@ input[type=range]::-moz-range-thumb {
   border-radius: 50px;
   background: #ffc600;
   cursor: pointer;
+}
+
+footer {
+  display: flex;
+  height: 6em;
+  width: 98%;
+  position: absolute;
+  bottom: 0;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+}
+
+#github {
+  color: #000;
+  margin-left: 2em;
+  text-decoration: none;
+}
+
+#copyright {
+  margin-right: 2em;
 }
